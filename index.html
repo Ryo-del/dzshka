@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Расписание занятий</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="icon.png" alt="Avatar" class="avatar">
+      <h1>Homework</h1>
+      <p>Just open it and see what homework you have — nothing more, nothing less.</p>
+    </div>
+
+    <div class="current-date" id="current-date"></div>
+    
+    <div class="day-indicator">
+      <div class="day-dot" data-day="1"></div>
+      <div class="day-dot" data-day="2"></div>
+      <div class="day-dot" data-day="3"></div>
+      <div class="day-dot" data-day="4"></div>
+      <div class="day-dot" data-day="5"></div>
+      <div class="day-dot" data-day="6"></div>
+      <div class="day-dot" data-day="0"></div>
+    </div>
+
+    <div class="search-box">
+      <input type="text" id="search" placeholder="Поиск предметов..." />
+    </div>
+
+    <h2>Предметы</h2>
+    <div class="work-list" id="work-list">
+      <!-- Список предметов будет сгенерирован JavaScript -->
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

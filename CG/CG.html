@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Редактирование ДЗ</title>
+  <link rel="stylesheet" href="CG.css"/>
+</head>
+<body>
+  <div class="container">
+    <div class="subject-section">
+      <div class="subject-header">
+        <span class="subject-emoji">🎨</span>
+        <h2>Компьютерная графика</h2>
+      </div>
+      
+      <div class="homework-content" id="homework-content">
+        <!-- Здесь будет отображаться текущее ДЗ -->
+        <p class="no-homework">Домашнее задание не добавлено</p>
+      </div>
+
+      <div class="edit-section" id="edit-section" style="display: none;">
+        <textarea id="homework-text" placeholder="Введите домашнее задание..."></textarea>
+        
+        <div class="file-upload">
+          <label for="file-input" class="file-button">
+            📎 Прикрепить файл
+          </label>
+          <input type="file" id="file-input" multiple style="display: none;">
+          <div id="file-preview" class="file-preview"></div>
+        </div>
+      </div>
+
+      <div class="actions">
+        <button id="edit-btn" class="btn btn-primary">✏️ Редактировать</button>
+        <button id="apply-btn" class="btn btn-success" style="display: none;">✅ Применить</button>
+        <button id="cancel-btn" class="btn btn-danger" style="display: none;">❌ Отменить</button>
+        <p class="error" id="error"></p>
+      </div>
+    </div>
+
+    <div class="subjects-list">
+      <h3>Другие предметы</h3>
+      <div class="subject-item">
+        <span class="item-emoji">💬</span>
+        <span>Коммуникативный практикум</span>
+      </div>
+      <div class="subject-item">
+        <span class="item-emoji">💻</span>
+        <span>Информационные технологии</span>
+      </div>
+      <div class="subject-item">
+        <span class="item-emoji">🇬🇧</span>
+        <span>Английский язык</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="CG.js"></script>
+</body>
+</html>
