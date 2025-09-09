@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
   let currentHomework = null;
   let selectedFiles = [];
 
-  const API_BASE_URL = 'https://backend-nu-five-76.vercel.app/api/homework/computer_graphics'; // Замените на ваш URL
+  const API_BASE_URL = 'https://backend-nu-five-76.vercel.app'; // Замените на ваш URL
 
   // --- Загрузка сохраненных данных с сервера ---
   async function loadHomework() {
