@@ -12,12 +12,12 @@ document.addEventListener('DOMContentLoaded', function() {
   let currentHomework = null;
   let selectedFiles = [];
 
-  const API_BASE_URL = 'https://backend-nu-five-76.vercel.app'; // Замените на ваш URL
+  const API_BASE_URL = 'https://backend-production-cf98.up.railway.app/api'; // для локального теста
 
   // --- Загрузка сохраненных данных с сервера ---
   async function loadHomework() {
     try {
-      const response = await fetch('https://backend-production-cf98.up.railway.app/api/homework/computer_graphics');
+      const response = await fetch(`${API_BASE_URL}/homework/computer_graphics`);
       
       if (response.status === 404) {
         // ДЗ не найдено, это нормально
