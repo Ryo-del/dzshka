@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // --- Загрузка сохраненных данных с сервера ---
   async function loadHomework() {
     try {
-      const response = await fetch(`${API_BASE_URL}/homework/computer_graphics`);
+      const response = await fetch(`${API_BASE_URL}/homework/math`);
       if (response.status === 404) {
         homeworkContent.innerHTML = '<p class="no-homework">Домашнее задание не добавлено</p>';
         return;
@@ -110,7 +110,7 @@ document.addEventListener('DOMContentLoaded', function() {
       updated_at: new Date().toISOString()
     };
     try {
-      const response = await fetch(`${API_BASE_URL}/homework/computer_graphics`, {
+      const response = await fetch(`${API_BASE_URL}/homework/math`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -185,7 +185,8 @@ document.addEventListener('DOMContentLoaded', function() {
     'button-oss': '../oss/oss.html', // вставьте ссылку на ОСС
     'button-ofg': '../ofg/ofg.html', // вставьте ссылку на ОФГ
     'button-bjd': '../bjd/bjd.html', // вставьте ссылку на БЖД
-    'button-op1c': '../op1c/op1c.html' // вставьте ссылку на ОП 1C
+    'button-op1c': '../op1c/op1c.html', // вставьте ссылку на ОП 1C
+    'button-cg': '../CG/CG.html'
   };
   Object.keys(subjectLinks).forEach(function(id) {
     const el = document.getElementById(id);

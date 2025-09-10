@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // --- Загрузка сохраненных данных с сервера ---
   async function loadHomework() {
     try {
-      const response = await fetch(`${API_BASE_URL}/homework/computer_graphics`);
+      const response = await fetch(`${API_BASE_URL}/homework/com_practicum`);
       if (response.status === 404) {
         homeworkContent.innerHTML = '<p class="no-homework">Домашнее задание не добавлено</p>';
         return;
@@ -110,7 +110,7 @@ document.addEventListener('DOMContentLoaded', function() {
       updated_at: new Date().toISOString()
     };
     try {
-      const response = await fetch(`${API_BASE_URL}/homework/computer_graphics`, {
+      const response = await fetch(`${API_BASE_URL}/homework/com_practicum`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -176,7 +176,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // --- Обработчик перехода по предметам ---
   const subjectLinks = {
-    'button-cp': '../CP/CP.html', // вставьте ссылку на КП
+    'button-cg': '../CG/CG.html', // вставьте ссылку на КП
     'button-it': '../IT/IT.html', // вставьте ссылку на ИТ
     'button-engl113': '../engl113/engl113.html', // вставьте ссылку на Англ. 113
     'button-engl208': '../engl113/engl208.html', // вставьте ссылку на Англ. 208

@@ -10,61 +10,61 @@ const subjects = [
     name: "Информационные технологии", 
     emoji: "💻",
     days: [1,4,6],
-    link: ""
+    link: "IT/IT.html"
   },
   { 
     name: "Элементы высш. матем.", 
     emoji: "📊",
     days: [1,6],
-    link: ""
+    link: "math/math.html"
   },
   { 
     name: "Английский язык 113", 
     emoji: "🇬🇧",
     days: [3],
-    link: ""
+    link: "engl113/engl113.html"
   },
     { 
     name: "Коммуникативный практикум", 
     emoji: "💬",
     days: [5],
-    link: ""
+    link: "CP/CP.html"
   },
     { 
     name: "Английский язык 208", 
     emoji: "🇬🇧",
     days: [3],
-    link: ""
+    link: "engl208/engl208.html"
   },
   { 
     name: "ОАП", 
     emoji: "👨‍💻",
     days: [2,4],
-    link: ""
+    link: "oap/oap.html"
   },
   { 
     name: "ОСС", 
     emoji: "⚙️",
     days: [2,4,5]
-    ,link: "https://www.youtube.com"
+    ,link: "oss/oss.html"
   },
   { 
     name: "ОФГ", 
     emoji: "💰",
     days: [4],
-    link: ""
+    link: "ofg/ofg.html"
   },
   { 
     name: "БЖД", 
     emoji: "🚨",
     days: [5],
-    link: ""
+    link: "bjd/bjd.html"
   },
   { 
     name: "ОП 1C", 
     emoji: "1С",
     days: [4,6],
-    link: ""
+    link: "op1c/op1c.html"
   }
 ];
 
