@@ -179,7 +179,7 @@ document.addEventListener('DOMContentLoaded', function() {
     'button-cg': '../CG/CG.html', // вставьте ссылку на КП
     'button-it': '../IT/IT.html', // вставьте ссылку на ИТ
     'button-engl113': '../engl113/engl113.html', // вставьте ссылку на Англ. 113
-    'button-engl208': '../engl113/engl208.html', // вставьте ссылку на Англ. 208
+    'button-engl208': '../engl208/engl208.html', // вставьте ссылку на Англ. 208
     'button-math': '../math/math.html', // вставьте ссылку на математику
     'button-oap': '../oap/oap.html', // вставьте ссылку на ОАП
     'button-oss': '../oss/oss.html', // вставьте ссылку на ОСС
