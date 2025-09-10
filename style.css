@@ -11,7 +11,28 @@ body {
   padding: 20px;
   min-height: 100vh;
 }
+.back-button-container {
+  margin-bottom: 20px;
+}
 
+.back-button {
+      position: relative;
+    top: 20px; /* смещение относительно нормального положения */
+  display: inline-block;
+  padding: 10px 16px;
+  background: rgb(232, 44, 44);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+.back-button:hover {
+  background: rgb(234, 0, 0);
+  text-decoration: none;
+  color: white;
+}
 .container {
   max-width: 600px;
   margin: 0 auto;
